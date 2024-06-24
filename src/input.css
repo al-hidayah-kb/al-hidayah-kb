@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sidebar {
+ transition: transform 0.3s ease-in-out;
+ transform: translateX(-100%);
+}
+
+.sidebar.active {
+ transform: translateX(0);
+}
+body {
+ @apply bg-gradient-to-b from-slate-900 to-slate-950 min-h-screen text-white font-poppins;
+}
+
+.header-blur {
+ @apply shadow-xl;
+}

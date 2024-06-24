@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- font google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+   href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+   rel="stylesheet"
+  />
+  <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+  <!-- tailwind css -->
+  <link rel="stylesheet" href="src/output.css" />
+
+  <title>Risma AL-HIDAYAH</title>
+ </head>
+ <body>
+  <!--Header Start-->
+  <header
+   id="home"
+   class="bg-slate-900 w-full h-14 flex items-center fixed top-0 z-20"
+  >
+   <div class="container">
+    <div class="flex justify-between items-center z-20 text-white">
+     <div class="flex items-center">
+      <div class="hamburger mr-5 lg:hidden">
+       <i class="bi bi-list text-xl"></i>
+      </div>
+      <a href="#" class="uppercase font-bold tracking-wide text-xl"
+       >al-hidayah</a
+      >
+     </div>
+
+     <div class="flex items-center lg:gap-x-5">
+      <!-- list sidebar large -->
+      <div class="list hidden lg:block lg:flex lg:justify-between lg:gap-8">
+       <a href="#" class="font-normal text-base block text-xl"> Beranda </a>
+       <a
+        href="#program"
+        class="text-slate-400 font-normal text-base block text-xl"
+       >
+        Program &. Kegiatan
+       </a>
+       <a
+        href="berita/"
+        class="text-slate-400 font-normal text-base block text-xl"
+       >
+        Berita
+       </a>
+       <a
+        href="donasi/"
+        class="text-slate-400 font-normal text-base block text-xl"
+       >
+        Donasi
+       </a>
+       <a
+        href="tentang-kami"
+        class="text-slate-400 font-normal text-base block text-xl"
+       >
+        Tentang Kami
+       </a>
+      </div>
+
+      <!-- Bahasa negara -->
+      <div class="relative mr-3 lg:-mr-5 bahasa w-[38px]">
+       <img src="src/img/Indonesia.png" class="rounded-full" />
+       <div
+        class="hidden list-bahasa absolute left-0 border-2 border-slate-800 w-[11rem] top-12 -translate-x-20 p-2 rounded z-20 bg-slate-900"
+       >
+        <h1 class="text-md font-semibold text-slate-500">Bahasa : Indonesia</h1>
+        <a href="#" class="inline-flex w-full items-center my-3 text-sm"
+         ><img
+          src="src/img/Indonesia.png"
+          class="rounded-full w-[38px] mr-2"
+         />Indonesia</a
+        >
+
+        <a
+         href="#"
+         class="text-slate-400 inline-flex w-full items-center my-3 text-sm"
+         ><img src="src/img/arab.png" class="rounded-full w-[38px] mr-2" />Arab
+         Saudi</a
+        >
+       </div>
+      </div>
+      <div class="media-sosial">
+       <i class="bi bi-three-dots-vertical ml-3 text-xl"></i>
+      </div>
+     </div>
+
+     <!-- sidebar list -->
+     <!-- sidebar mobile -->
+     <div
+      class="sidebar fixed min-h-screen top-0 bg-slate-950 w-[80%] left-0 sm:w-[50%] z-20"
+     >
+      <div
+       class="sidebar-main flex justify-between items-center border-b-2 border-slate-900"
+      >
+       <h1 class="uppercase p-6 text-2xl font-bold tracking-wide w-full">
+        al-hidayah
+       </h1>
+       <div class="close inline mr-5">
+        <i class="bi bi-x text-4xl"></i>
+       </div>
+      </div>
+      <div class="list py-5 px-3 mb-2 lg:hidden">
+       <a href="#" class="font-normal text-[15px] block py-2 px-3 text-xl mb-3">
+        <i class="bi bi-house-door-fill mr-2"></i>
+        Beranda
+       </a>
+       <a
+        href="#program"
+        class="text-slate-400 font-normal text-sm block py-2 px-3 text-xl mb-3"
+       >
+        <i class="bi bi-people-fill mr-2"></i>
+        Program &. Kegiatan
+       </a>
+       <a
+        href="berita/"
+        class="text-slate-400 font-normal text-sm block py-2 px-3 text-xl mb-3"
+       >
+        <i class="bi bi-megaphone-fill mr-2"></i>
+        Berita
+       </a>
+       <a
+        href="donasi/"
+        class="text-slate-400 font-normal text-sm block py-2 px-3 text-xl mb-3"
+       >
+        <i class="bi bi-wallet-fill mr-2"></i>
+        Donasi
+       </a>
+       <a
+        href="tentang-kami/"
+        class="text-slate-400 font-normal text-sm block py-2 px-3 text-xl mb-3"
+       >
+        <i class="bi bi-envelope-fill mr-2"></i>
+        Tentang Kami
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </header>
+
+  <!--Header End-->
+
+  <!-- hero start -->
+  <section id="hero" class="mt-24">
+   <div class="container">
+    <div class="flex flex-col lg:flex-row">
+     <div
+      class="left text-center lg:text-left lg:mr-10 mt-4 lg:mt-5 lg:max-w-[42rem]"
+     >
+      <h1 class="uppercase font-extrabold text-slate-300 text-sm">
+       ~ al-hidayah ~
+      </h1>
+      <h2 class="mt-2 text-2xl font-semibold">
+       Mari berbuat
+       <span class="uppercase text-purple-500 font-bold typing-text"></span>
+       Untuk merubah dunia
+      </h2>
+      <p class="text-sm leading-2 mt-3 text-slate-300 opacity-80">
+       Kebaikan adalah kekuatan yang dapat mengubah dunia. Mulailah dengan
+       langkah kecil, satu perbuatan baik setiap hari. Bergabunglah dengan kami
+       untuk menciptakan lingkungan yang lebih baik, penuh cinta dan kepedulian.
+       Bersama-sama, kita bisa membuat perbedaan nyata.
+      </p>
+      <a
+       href="#"
+       class="mt-5 mb-10 lg:mb-0 py-2 px-4 bg-purple-500 rounded inline-block font-semibold hover:bg-purple-600 transition ease-in"
+      >
+       <i class="bi bi-telephone-fill mr-2"></i>
+       Hubungi Kami
+      </a>
+     </div>
+
+     <img
+      src="src/img/hidayah.jpg"
+      class="rounded mt-8 sm:max-w-[30rem] sm:mx-auto"
+     />
+    </div>
+   </div>
+  </section>
+
+  <!-- hero end -->
+
+  <!-- Main start -->
+  <section id="program" class="mt-36">
+   <div class="container">
+    <div class="w-full mb-8">
+     <div class="max-w-xl mx-auto text-center">
+      <h1 class="font-semibold text-2xl tracking-wide">Program &, kegiatan</h1>
+      <p class="max-w-[32rem] mx-auto pt-1 text-base text-slate-300 opacity-80">
+       Ini adalah beberapa program atau kegiatan kami saat acara
+      </p>
+     </div>
+    </div>
+    <div class="w-full flex flex-wrap px-4 justify-center">
+     <div class="mb-20 p-2 lg:p-4 md:w-1/2 shadow-sm">
+      <div class="rounded-md overflow-hidden">
+       <img src="src/img/takjil.jpg" />
+      </div>
+      <h2 class="text-2xl font-bold py-4 uppercase">
+       Berbagi <span class="text-purple-500">Takjil</span>
+      </h2>
+      <p class="text-slate-300 text-sm lg:text-base tracking-widest">
+       Mari kita jaga semangat berbagi dengan menyediakan takjil untuk keluarga,
+       teman, dan orang yang membutuhkan, sehingga ibadah puasa kita menjadi
+       lebih bermakna.
+      </p>
+     </div>
+     <div class="mb-20 p-2 lg:p-4 md:w-1/2 shadow-sm">
+      <div class="rounded-md overflow-hidden">
+       <img src="src/img/bukber.jpg" />
+      </div>
+      <h2 class="text-2xl font-bold py-4 uppercase">
+       Buka <span class="text-purple-500">Bersama</span>
+      </h2>
+      <p class="text-slate-300 text-sm lg:text-base tracking-widest">
+       Marilah kita manfaatkan momen buka puasa bersama ini sebagai ajang
+       mempererat silaturahmi dan berbagi kebaikan. Dengan berkumpul bersama,
+       kita tidak hanya menikmati hidangan lezat, tetapi juga memperkuat ikatan
+       persaudaraan di antara kita.
+      </p>
+     </div>
+
+     <div class="mb-20 p-2 lg:p-4 md:w-1/2 shadow-sm">
+      <div class="rounded-md overflow-hidden">
+       <img src="src/img/lomba.jpg" />
+      </div>
+      <h2 class="text-2xl font-bold py-4 uppercase">
+       Belajar <span class="text-purple-500">Bersama</span>
+      </h2>
+      <p class="text-slate-300 text-sm lg:text-base tracking-widest">
+       Mari kita jadikan belajar bersama sebagai kebiasaan positif yang
+       mendukung prestasi kita semua. Semakin kita bekerjasama, semakin mudah
+       kita mencapai tujuan.
+      </p>
+     </div>
+
+     <div class="mb-20 p-2 lg:p-4 md:w-1/2 shadow-sm">
+      <div class="rounded-md overflow-hidden">
+       <img src="src/img/donasi.jpg" />
+      </div>
+      <h2 class="text-2xl font-bold py-4 uppercase">
+       Support <span class="text-purple-500">Palestina</span>
+      </h2>
+      <p class="text-slate-300 text-sm lg:text-base tracking-widest">
+       Mari kita tunjukkan solidaritas kita dengan mendukung saudara-saudara
+       kita di Palestina. Mereka sangat membutuhkan bantuan kita. Melalui donasi
+       bersama, kita bisa memberikan kontribusi nyata untuk meringankan
+       penderitaan mereka.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Main end -->
+
+  <!-- Bela palestina start -->
+  <section id="#bela" class="mt-20">
+   <div class="container">
+    <div class="px-5 w-full">
+     <h1 class="text-center text-2xl font-bold capitalize">
+      Apakah anda benar - benar seorang
+      <span class="uppercase text-purple-500">Muslim</span> ?
+     </h1>
+     <p
+      class="font-extralight font-medium text-lg tracking-wide text-slate-300 text-center mt-2"
+     >
+      Sebagai Muslim, kita diajarkan untuk saling membantu dan mendukung sesama
+      saudara
+     </p>
+    </div>
+    <div class="flex flex-col mt-10 lg:flex-row">
+     <div class="p-4 overflow-hidden rounded sm:w-[40rem] sm:mx-auto">
+      <img src="src/img/palestine.jpg" class="rounded" />
+     </div>
+
+     <div class="right px-4 sm:w-[40rem] sm:mx-auto">
+      <h2 class="md:text-2xl text-lg my-3 uppercase font-semibold">
+       free <span class="underline underline-offset-4">palestine</span>
+      </h2>
+      <p
+       class="font-extralight font-medium text-sm sm:text-base lg:text-lg tracking-wide text-slate-300"
+      >
+       Bagi banyak umat Muslim, Palestina memiliki signifikansi khusus karena
+       merupakan rumah bagi Masjid Al-Aqsa, situs suci ketiga dalam Islam.
+       Konflik Israel-Palestina juga sering dilihat sebagai perjuangan melawan
+       penindasan dan penjajahan. Mendukung Palestina berarti mendukung hak
+       asasi manusia, kebebasan, dan keadilan bagi rakyat Palestina yang telah
+       lama menderita akibat konflik tersebut.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Bela palestina End -->
+
+  <!-- footer start -->
+  <section id="footer" class="relative bottom-0 mt-20 bg-slate-900">
+   <div class="container">
+    <div class="p-4 mt-5">
+     <h1 class="text-lg font-bold uppercase">al-hidayah</h1>
+     <p class="text-slate-400 sm:w-1/2">
+      Adalah nama mushola kami yang berada di desa kampung baru
+     </p>
+    </div>
+    <div class="mt-4 flex flex-wrap justify-between p-4 items-center">
+     <div class="mt-5">
+      <h2 class="text-lg font-semibold uppercase">menu-list</h2>
+      <ul class="py-2 text-slate-400 capitalize">
+       <li class="py-[2px]"><a href="">Beranda</a></li>
+       <li class="py-[2px]"><a href="">program &, kegiatan</a></li>
+       <li class="py-[2px]"><a href="">Berita</a></li>
+       <li class="py-[2px]"><a href="">Donasi</a></li>
+       <li class="py-[2px]"><a href="">Tentang kami</a></li>
+      </ul>
+     </div>
+
+     <div class="mt-5">
+      <h2 class="text-lg font-semibold uppercase">donasi</h2>
+      <ul class="py-2 text-slate-400 capitalize">
+       <li class="py-[2px]"><a href="">Anak yatim &, piatu</a></li>
+       <li class="py-[2px]"><a href="">Makanan ke palestina</a></li>
+       <li class="py-[2px]"><a href="">Pembangunan mushola</a></li>
+      </ul>
+     </div>
+
+     <div class="mt-5">
+      <h2 class="text-lg font-semibold uppercase">sosial media</h2>
+      <ul class="py-2 text-slate-400 capitalize">
+       <li class="py-[2px]"><a href="">instagram</a></li>
+      </ul>
+     </div>
+    </div>
+    <div
+     class="border-t-2 border-slate-700 py-10 text-center max-w-[40rem] mx-auto"
+    >
+     <h1 class="text-slate-400 capitalize">
+      hak cipta © 2024
+      <span class="uppercase font-bold text-white">al-hidayah.</span>
+      hak cipta dilindungi oleh perundang - undangan Made with 🩷 by
+      <span class="uppercase font-bold text-white">fahri alfa rizki</span>
+     </h1>
+    </div>
+   </div>
+  </section>
+  <!-- footer end -->
+  <script src="src/js/app.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <script>
+   var typed = new Typed(".typing-text", {
+    strings: ["BAIK", "JUJUR", "ADIL"],
+    typeSpeed: 100,
+    loop: true
+   });
+  </script>
+ </body>
+</html>

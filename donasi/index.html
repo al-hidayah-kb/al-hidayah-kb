@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- font google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+   href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
+   rel="stylesheet"
+  />
+  <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+  <link rel="stylesheet" href="../src/output.css" />
+  <title>donasi al-hiayah</title>
+ </head>
+ <body class="flex flex-col min-h-screen min-h-full">
+  <!--Header Start-->
+  <header
+   id="home"
+   class="bg-slate-900 w-full h-14 flex items-center fixed top-0 z-20"
+  >
+   <div class="container mx-auto">
+    <div class="flex justify-between items-center z-20 text-white">
+     <div class="flex items-center">
+      <div class="hamburger mr-5 lg:hidden">
+       <i class="bi bi-list text-xl"></i>
+      </div>
+      <a href="#" class="uppercase font-bold tracking-wide text-lg"
+       >al-hidayah</a
+      >
+     </div>
+
+     <div class="flex items-center lg:gap-x-5">
+      <!-- list sidebar large -->
+      <div class="list hidden lg:block lg:flex lg:justify-between lg:gap-8">
+       <a href="../" class="font-normal text-base block text-xl text-slate-400">
+        Beranda
+       </a>
+       <a
+        href="#program"
+        class="text-slate-400 font-normal text-base block text-xl"
+       >
+        Program &. Kegiatan
+       </a>
+       <a href="../berita/" class="font-normal text-base block text-xl">
+        Berita
+       </a>
+       <a href="#" class="text-slate-400 font-normal text-base block text-xl">
+        Donasi
+       </a>
+       <a
+        href="../tentang-kami/"
+        class="text-slate-400 font-normal text-base block text-xl"
+       >
+        Tentang Kami
+       </a>
+      </div>
+
+      <!-- Bahasa negara -->
+      <div class="relative mr-3 lg:-mr-5 bahasa w-[38px]">
+       <img src="../src/img/Indonesia.png" class="rounded-full" />
+       <div
+        class="hidden list-bahasa absolute left-0 border-2 border-slate-800 w-[11rem] top-12 -translate-x-20 p-2 rounded z-20 bg-slate-900"
+       >
+        <h1 class="text-md font-semibold text-slate-500">Bahasa : Indonesia</h1>
+        <a href="#" class="inline-flex w-full items-center my-3 text-sm"
+         ><img
+          src="../src/img/Indonesia.png"
+          class="rounded-full w-[38px] mr-2"
+         />Indonesia</a
+        >
+
+        <a
+         href="#"
+         class="text-slate-400 inline-flex w-full items-center my-3 text-sm"
+         ><img
+          src="../src/img/arab.png"
+          class="rounded-full w-[38px] mr-2"
+         />Arab Saudi</a
+        >
+       </div>
+      </div>
+      <div class="media-sosial">
+       <i class="bi bi-three-dots-vertical ml-3 text-xl"></i>
+      </div>
+     </div>
+
+     <!-- sidebar list -->
+     <!-- sidebar mobile -->
+     <div
+      class="sidebar fixed min-h-screen top-0 bg-slate-950 w-[80%] left-0 sm:w-[50%] z-20"
+     >
+      <div
+       class="sidebar-main flex justify-between items-center border-b-2 border-slate-900"
+      >
+       <h1 class="uppercase p-6 text-2xl font-bold tracking-wide w-full">
+        al-hidayah
+       </h1>
+       <div class="close inline mr-5">
+        <i class="bi bi-x text-4xl"></i>
+       </div>
+      </div>
+      <div class="list py-5 px-3 mb-2 lg:hidden">
+       <a
+        href="../"
+        class="text-slate-400 font-normal text-[15px] block py-2 px-3 text-xl mb-3"
+       >
+        <i class="bi bi-house-door-fill mr-2"></i>
+        Beranda
+       </a>
+       <a
+        href="#program"
+        class="text-slate-400 font-normal text-sm block py-2 px-3 text-xl mb-3"
+       >
+        <i class="bi bi-people-fill mr-2"></i>
+        Program &. Kegiatan
+       </a>
+       <a
+        href="../berita/"
+        class="text-slate-400 font-normal text-sm block py-2 px-3 text-xl mb-3"
+       >
+        <i class="bi bi-megaphone-fill mr-2"></i>
+        Berita
+       </a>
+       <a href="#" class="font-normal text-sm block py-2 px-3 text-xl mb-3">
+        <i class="bi bi-wallet-fill mr-2"></i>
+        Donasi
+       </a>
+       <a
+        href="../tentang-kami/"
+        class="text-slate-400 font-normal text-sm block py-2 px-3 text-xl mb-3"
+       >
+        <i class="bi bi-envelope-fill mr-2"></i>
+        Tentang Kami
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </header>
+  <!--Header End-->
+
+  <section id="404" class="my-40 justify-center text-center">
+   <div class="container">
+    <h1 class="text-2xl font-bold">
+     Silakan yang ingin donasi untuk anak yatim &, piatu, dana palestina
+     ,perbaikan mushola,
+     <a
+      href="https://saweria.co/alhidayahdonasi"
+      class="underline underline-offset-2 text-purple-500"
+      >Dipersilakan melalui link di bawah ini</a
+     >
+    </h1>
+
+    <p class="capitalize text-base mt-3">
+     Dari Abu Hurairah ra, Rasulullah saw., bersabda: "Orang yang senantiasa
+     memberi sedekah akan terhindar dari siksa kubur." (HR. Tirmidzi).
+    </p>
+   </div>
+  </section>
+
+  <!--footer start-->
+  <footer id="footer" class="bg-slate-900 mt-20">
+   <div class="container mx-auto">
+    <div class="p-4 mt-5">
+     <h1 class="text-lg font-bold uppercase">al-hidayah</h1>
+     <p class="text-slate-400 sm:w-1/2">
+      Adalah nama mushola kami yang berada di desa kampung baru
+     </p>
+    </div>
+    <div class="mt-4 flex flex-wrap justify-between p-4 items-center">
+     <div class="mt-5">
+      <h2 class="text-lg font-semibold uppercase">menu-list</h2>
+      <ul class="py-2 text-slate-400 capitalize">
+       <li class="py-[2px]"><a href="">Beranda</a></li>
+       <li class="py-[2px]"><a href="">program &, kegiatan</a></li>
+       <li class="py-[2px]"><a href="">Berita</a></li>
+       <li class="py-[2px]"><a href="">Donasi</a></li>
+       <li class="py-[2px]"><a href="">Tentang kami</a></li>
+      </ul>
+     </div>
+
+     <div class="mt-5">
+      <h2 class="text-lg font-semibold uppercase">donasi</h2>
+      <ul class="py-2 text-slate-400 capitalize">
+       <li class="py-[2px]"><a href="">Anak yatim &, piatu</a></li>
+       <li class="py-[2px]"><a href="">Makanan ke palestina</a></li>
+       <li class="py-[2px]"><a href="">Pembangunan mushola</a></li>
+      </ul>
+     </div>
+
+     <div class="mt-5">
+      <h2 class="text-lg font-semibold uppercase">sosial media</h2>
+      <ul class="py-2 text-slate-400 capitalize">
+       <li class="py-[2px]"><a href="">instagram</a></li>
+      </ul>
+     </div>
+    </div>
+    <div
+     class="border-t-2 border-slate-700 py-10 text-center max-w-[40rem] mx-auto"
+    >
+     <h1 class="text-slate-400 capitalize">
+      hak cipta © 2024
+      <span class="uppercase font-bold text-white">al-hidayah.</span>
+      hak cipta dilindungi oleh perundang - undangan Made with 🩷 by
+      <span class="uppercase font-bold text-white">fahri alfa rizki</span>
+     </h1>
+    </div>
+   </div>
+  </footer>
+  <!-- footer end  -->
+
+  <script src="../src/js/app.js"></script>
+ </body>
+</html>
